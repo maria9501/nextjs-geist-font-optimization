@@ -1,0 +1,45 @@
+name: hourly_services_app
+description: A Flutter platform connecting clients with professionals for hourly services.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^2.3.0
+  firebase_auth: ^4.2.0
+  firebase_messaging: ^14.1.0
+  cloud_firestore: ^4.1.0
+  
+  # State Management
+  riverpod: ^2.3.0
+  flutter_riverpod: ^2.3.0
+  
+  # UI
+  google_fonts: ^3.0.1
+  cached_network_image: ^3.2.3
+  carousel_slider: ^4.1.1
+  
+  # Utils
+  intl: ^0.18.1
+  shared_preferences: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
